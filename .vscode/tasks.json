@@ -7,6 +7,15 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
+                "-ggdb",                    //Debug Mode
+                //"-O2",                    //Release Mode, Command 1
+                //"-DNDEBUG",               //Release Mode, Command 2
+                "-pedantic-errors",         // Disableing compiler extentions
+                "-Wall",
+                "-Weffc++",
+                "-Wextra",
+                "-Wconversion",             //Increase warning levels
+                "-Wsign-conversion",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
