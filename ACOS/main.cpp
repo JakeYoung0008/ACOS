@@ -58,7 +58,7 @@ int main()
                 int operation{};
                 int num1{};
                 int num2{};
-                int ans{};
+                int answer{};
 
                 system("clear");
 
@@ -73,49 +73,54 @@ int main()
                 cout << "For now thats what you get unfotunetely; Since I am a beginner to this whole programming thing. Have Fun!\n\n";
 
                 cout << "Enter your first number: ";
-                cin >> num1, '\n';
+                cin >> num1;
+                cout << '\n';
 
                 cout << "Enter your second number: ";
-                cin >> num2, '\n';
+                cin >> num2;
+                cout << '\n';
 
                 cout << "Enter the number for the prefered operation: ";
-                cin >> operation, '\n';
+                cin >> operation;
+                cout << '\n';
 
                 switch (operation)
                 {
-                case 1:
-                    ans = num1 + num2;
-                    cout << "The answer is: " << ans << "\n\n";
-                    break;
+                    case 1:
+                        answer = num1 + num2;
+                        cout << "The answer is: " << answer << "\n\n";
+                        break;
 
-                case 2:
-                    ans = num1 - num2;
-                    cout << "The answer is: " << ans << "\n\n";
-                    break;
+                    case 2:
+                        answer = num1 - num2;
+                        cout << "The answer is: " << answer << "\n\n";
+                        break;
 
-                case 3:
-                    ans = num1 * num2;
-                    cout << "The answer is: " << ans << "\n\n";
-                    break;
+                    case 3:
+                        answer = num1 * num2;
+                        cout << "The answer is: " << answer << "\n\n";
+                        break;
 
-                case 4:
-                    ans = (double)num1 / (double)num2;
-                    cout << "The answer is: " << ans << "\n\n";
-                    break;
+                    case 4:
+                        answer = num1 / num2;
+                        cout << "The answer is: " << answer << "\n\n";
 
-                case 5:
-                    ans = num1 % num2;
-                    cout << "The answer is: " << ans << "\n\n";
-                    break;
+                        break;
 
-                default:
-                    cout << "In correct numbers or Invalid operation.\n\n";
-                    break;
+                    case 5:
+                        answer = num1 % num2;
+                        cout << "The answer is: " << answer << "\n\n";
+                        break;
+
+                    default:
+                        cout << "In correct numbers or Invalid operation.\n\n";
+                        break;
                 }
             }
 
-            //Unavailable command; add new features above this line...
-            else {
+            // Unavailable command; add new features above this line...
+            else
+            {
                 cout << "Bad command. Use the term \"Help\" to get help.\n";
             }
         }
